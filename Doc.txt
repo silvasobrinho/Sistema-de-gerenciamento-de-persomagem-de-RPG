@@ -10,9 +10,3 @@
 ª Criação de aventuras para a comunidade
 ª Gerador aleatorio de personagens prontos
 
-
-
-
-
-----Como USUARIO eu quero criar fichas de personagens para jogar d&d.
-	º
