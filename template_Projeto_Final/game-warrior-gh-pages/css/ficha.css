@@ -1,0 +1,79 @@
+#atributos {
+    margin-top: 0.5rem;
+}
+
+#pv {
+    margin-top: 0.5rem;
+}
+
+#mana .mana {
+    margin-top: 0.5rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+#anotações {
+    float: right;
+    position: absolute;
+    margin-left: 33rem;
+    margin-top: 11rem;
+}
+
+#pericias {
+    float: right;
+    position: absolute;
+    margin-left: 33rem;
+    margin-top: 27.5rem;
+}
+
+.BMArmas {
+    display: inline;
+}
+
+#arma {
+    display: inline;
+}
+
+#benimali {
+    display: inline;
+}
+
+.armas {
+    margin-left: 0.0rem;
+    margin-top: 7rem;
+}
+
+.armaduras {
+    margin-top: 1rem;
+}
+
+.magcamfor {
+    margin-top: -3rem;
+}
+
+.form-control-pv {
+    width: 1px;
+    height: 3rem;
+    text-align: center;
+}
+
+.form-control-centralizado {
+    text-align: center;
+}
+
+.textoanotações {
+    width: 30rem;
+    height: 30rem;
+}
+
+.top {
+    padding-top: 0rem;
+}
+
+.topmagias {
+    margin-top: -2rem;
+}
+
+.bg-black {
+    background-color: black;
+}
