@@ -1,20 +1,47 @@
-const {Model, DataTypes} = require('sequelize');
+const Sequelize = require('sequelize');
+const bd = require('../../db');
+const bcrypt = require('bcryptjs');
 
-class User extends Model{
-    static init(sequelize){
-        super.init({
-            name: DataTypes.STRING,
-            email: DataTypes.STRING,
-        }, {
-            sequelize
-        })
-    }
+const User= bd.define('users',{
+    
+    name:{
+        type: Sequelize.STRING,
+        required:true,
+        },
+    
+    password:{
+        type: Sequelize.STRING,
+        required:true,
+        select: false,
+        allownull: false,
+        len: [6,16],
+    },
+    email:{
+        type: Sequelize.STRING,
+        required:true,
+        unique: true,
+        lowercase: true,
+        },
+    });
+   /*      {
+            instanceMethods: {
+            generateHash: function (password) {
+                return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null)
+            },
+            validPassword: function (password) {
+                return bcrypt.compareSync(password, this.password)
+            }
+            }
+        }); */
+/*       
+User.generateHash = function(password) {
+    return bcrypt.hasSync (password, bcrypt.genSaltSync(8), null);
+};
 
-    static associate(models){
-        this.hasMany(models.Address, {foreignKey:'user_id', as: 'addresses'});
-        this.belongsToMany(models.Tech, { foreignKey: 'user_id', through: 'user_techs', as: 'techs'});
-
-    }
-}
-
+User.prototype.validPassword = function (password){
+    return bcrypt.compareSync(password, this.localPassword);
+};
+ */
+    //  User.sync()
+//User.sync({ force: true });
 module.exports = User;
