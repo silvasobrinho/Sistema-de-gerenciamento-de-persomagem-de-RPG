@@ -13,17 +13,13 @@
 }
 
 #anotações {
-    float: right;
-    position: absolute;
-    margin-left: 33rem;
-    margin-top: 11rem;
+    margin-left: -1rem;
+    margin-top: 1rem;
 }
 
 #pericias {
-    float: right;
-    position: absolute;
-    margin-left: 33rem;
-    margin-top: 27.5rem;
+    margin-left: -1rem;
+    margin-top: 1rem;
 }
 
 .BMArmas {
@@ -40,15 +36,16 @@
 
 .armas {
     margin-left: 0.0rem;
-    margin-top: 7rem;
+    margin-top: 0rem;
 }
 
 .armaduras {
     margin-top: 1rem;
+    margin-left: -1rem;
 }
 
 .magcamfor {
-    margin-top: -3rem;
+    margin-top: 0rem;
 }
 
 .form-control-pv {
@@ -76,4 +73,8 @@
 
 .bg-black {
     background-color: black;
+}
+
+.input-group-text {
+    text-align: center;
 }
