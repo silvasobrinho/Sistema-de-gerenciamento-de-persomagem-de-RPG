@@ -78,3 +78,80 @@ $(window).on('load', function() {
 
 })(jQuery);
 
+
+
+/*-------------------------
+requisição
+------*/
+function login(email, senha){
+	axios.post('/sessions',{
+		email: email,
+		password: senha
+
+	})
+	.then(function (response) {
+		console.log(response);
+	  })
+	  .catch(function (error) {
+		console.log(error);
+	  })
+	};
+
+
+	$(document).ready(function() {
+		//form submit
+		const URL = 'http://localhost:3000/sessions'
+
+		$("#login").submit(function(event){
+			var _email      = $('#email').val();
+			var _password   = $('#password').val();
+			
+		axios
+		  .post(URL, 
+			{ email:_email, password: _password })
+		  .then(response => {
+					// If request is good...
+					window.localStorage.setItem(response.token)
+				  })
+				.catch((error) => {
+					console.log(error)
+				  })		
+		})
+	});
+
+	const USER_TOKEN = localStorage.getItem('token')
+	const AuthStr = 'Bearer '.concat(USER_TOKEN)
+	const URL = 'http://localhost:3000/sessions'	
+	axios
+	  .get(URL, 
+		{ headers: { Authorization: AuthStr } })
+	  .then(response => {
+				
+				console.log(response.data)
+			  })
+			.catch((error) => {
+				console.log(error)
+			  })
+
+
+
+			  $(document).ready(function() {
+				//form submit
+				const URL = 'http://localhost:3000/register'
+		
+				$("#register").submit(function(event){
+					var _email      = $('#email').val();
+					var _password   = $('#password').val();
+					
+				axios
+				  .post(URL, 
+					{ email:_email, password: _password })
+				  .then(response => {
+							// If request is good...
+							console.log("registrou")
+						  })
+						.catch((error) => {
+							console.log(error)
+						  })		
+				})
+			});

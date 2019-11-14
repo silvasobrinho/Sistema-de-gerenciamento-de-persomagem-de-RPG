@@ -98,9 +98,8 @@ class PersonagemController {
 
     const personagem = await Personagem.findOrFail(params.id)
 
-    await personagem.load('iimages')
-
-    return property
+  
+    return personagem
   }
 
   /**
