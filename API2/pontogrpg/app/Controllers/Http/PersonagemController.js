@@ -98,9 +98,8 @@ class PersonagemController {
 
     const personagem = await Personagem.findOrFail(params.id)
 
-    await personagem.load('iimages')
-
-    return property
+  
+    return personagem
   }
 
   /**
@@ -111,9 +110,12 @@ class PersonagemController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async update ({ params, request, response }) {
+  async update ({ params,auth, request, response }) {
 
     const personagem = await Personagem.findOrFail(params.id)
+
+    if (personagem.user_id !== auth.user.id){
+      return response.status(401).send({ error: 'Não autorizado'})}
 
     const data = request.only([
       'nome_personagem',
@@ -174,12 +176,12 @@ class PersonagemController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async destroy ({ params, request, response }) {
+  async destroy ({ params, auth, response }) {
 
     const personagem = await Personagem.findOrFail(params.id)
 
 
-    if (personagem.user_id !== AuthenticatorAssertionResponse.user.id){
+    if (personagem.user_id !== auth.user.id){
       return response.status(401).send({ error: 'Não autorizado'})
 
     }

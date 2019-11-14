@@ -47,7 +47,7 @@
                                           font-family: 'Fira Code', Courier, monospace;"> 3Gs RPG</span>
             </a>
             <div class="user-panel">
-                <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Login</a> / <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Register</a>
+                <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Login / Register</a>
             </div>
             <!-- responsive -->
             <div class="nav-switch">
@@ -89,20 +89,21 @@
                                 <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
                                     <!--Body-->
+                                    <form id="login">
                                     <div class="modal-body mb-1">
                                         <div class="md-form form-sm mb-5">
                                             <i class="fa fa-envelope prefix"></i>
-                                            <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                            <input type="email" id="modalLRInput10" id="email" class="form-control form-control-sm validate">
                                             <label data-error="wrong" data-success="right" for="modalLRInput10">Seu email</label>
                                         </div>
 
                                         <div class="md-form form-sm mb-4">
                                             <i class="fa fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                            <input type="password" id="modalLRInput11" id="password" class="form-control form-control-sm validate">
                                             <label data-error="wrong" data-success="right" for="modalLRInput11">Sua senha</label>
                                         </div>
                                         <div class="text-center mt-2">
-                                            <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                            <input class="btn btn-info" type="submit" name="submit" value="Log In">Log in <i class="fa fa-sign-in ml-1"></i>
                                         </div>
                                     </div>
                                     <!--Footer-->
@@ -113,7 +114,7 @@
                                         </div>
                                         <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Fechar</button>
                                     </div>
-
+                                </form>
                                 </div>
                                 <!--/.Panel 7-->
 
@@ -121,30 +122,32 @@
                                 <div class="tab-pane fade" id="panel8" role="tabpanel">
 
                                     <!--Body-->
+                                    <form id="login">
                                     <div class="modal-body">
                                         <div class="md-form form-sm mb-5">
                                             <i class="fa fa-envelope prefix"></i>
-                                            <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                            <input type="email" id="modalLRInput12" id="email" class="form-control form-control-sm validate">
                                             <label data-error="wrong" data-success="right" for="modalLRInput12">Seu email</label>
                                         </div>
 
                                         <div class="md-form form-sm mb-5">
                                             <i class="fa fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                            <input type="password" id="modalLRInput13" id="password" class="form-control form-control-sm validate">
                                             <label data-error="wrong" data-success="right" for="modalLRInput13">Sua senha</label>
                                         </div>
 
                                         <div class="md-form form-sm mb-4">
                                             <i class="fa fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                            <input type="password" id="modalLRInput14" id="password" class="form-control form-control-sm validate">
                                             <label data-error="wrong" data-success="right" for="modalLRInput14">Repita sua senha</label>
                                         </div>
 
                                         <div class="text-center form-sm mt-2">
-                                            <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                                            <button class="btn btn-info" type="submit" name="submit" value="Log In">Sign up <i class="fa fa-sign-in ml-1"></i></button>
                                         </div>
 
                                     </div>
+                                </form>
                                     <!--Footer-->
                                     <div class="modal-footer">
                                         <div class="options text-right">
@@ -541,6 +544,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
