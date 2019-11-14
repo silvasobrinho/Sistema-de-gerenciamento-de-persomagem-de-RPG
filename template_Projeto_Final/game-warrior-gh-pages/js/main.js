@@ -82,7 +82,7 @@ $(window).on('load', function() {
 
 /*-------------------------
 requisição
-------*/
+------*//* 
 function login(email, senha){
 	axios.post('/sessions',{
 		email: email,
@@ -154,4 +154,9 @@ function login(email, senha){
 							console.log(error)
 						  })		
 				})
-			});
+			}); */
+
+			/******** New Game 
+			 * ***************/
+
+			 
