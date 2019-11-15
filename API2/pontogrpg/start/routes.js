@@ -18,6 +18,7 @@ const Route = use('Route')
 
 Route.post('/register', 'AuthController.register')
 Route.post('/sessions', 'SessionController.create')
+Route.post('/userdata', 'AuthController.getuserdata')
 Route.post('/authenticate', 'AuthController.authenticate')
 Route.resource('personagens', 'PersonagemController')
   .apiOnly()

@@ -159,4 +159,69 @@ function login(email, senha){
 			/******** New Game 
 			 * ***************/
 
-			 
+			 function login(){
+				$('#errorlogin').addClass("hide");
+
+				let email = document.getElementById("modalLRInput10").value;
+				let password = document.getElementById("modalLRInput11").value;
+				let url = "http://localhost:3333/sessions";
+
+				axios.post(url,{
+					email : email,
+					password: password,
+					})
+				.then(function (response) {
+					$('#sclogin').removeClass("hide");
+					
+					localStorage.setItem('rpgtoken',response.data.token);
+					
+					console.log(localStorage.getItem("rpgtoken"))
+					
+					
+				})
+				.catch(function (error) {
+					console.log("tono errorrrrr")
+					$('#errorlogin').removeClass("hide");
+					console.error(error)
+				});
+
+
+
+
+
+
+
+
+
+				}
+
+			function register(){
+				$('#erroregister').addClass("hide");
+				$('#erroruser').addClass("hide");
+				$('#userregister').addClass("hide");
+				if(document.getElementById("modalLRInput13").value !== document.getElementById("modalLRInput14").value){
+						return $('#erroregister').removeClass("hide");
+
+				}
+				let email = document.getElementById("modalLRInput12").value;
+				let password = document.getElementById("modalLRInput13").value;
+				let username = document.getElementById("rusername").value;
+				console.log("tentando registrar")
+				let url = "http://localhost:3333/register";
+				
+				axios.post(url,{
+					email : email,
+					password: password,
+					username: username,
+				})
+				.then(function (response) {
+					console.log(response)
+					$('#userregister').removeClass("hide");
+				})
+				.catch(function (error) {
+					
+					$('#erroruser').removeClass("hide");
+					console.error(error)
+				});
+
+			}

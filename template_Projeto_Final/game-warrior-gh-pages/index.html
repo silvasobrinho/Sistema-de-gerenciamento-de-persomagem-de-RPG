@@ -90,20 +90,27 @@
 
                                     <!--Body-->
                                     <form>
+                                            <div id="errorlogin" class="hide">
+                                                   Usuario não cadastrado ou senha errada!
+                                            </div>
+                                            <div id="sclogin" class="hide">
+                                                    Bom jogo!
+                                             </div>
+
                                     <div class="modal-body mb-1">
                                         <div class="md-form form-sm mb-5">
                                             <i class="fa fa-envelope prefix"></i>
-                                            <input type="email" id="modalLRInput10" id="email" class="form-control form-control-sm validate">
+                                            <input type="email" id="modalLRInput10" autocomplete="username" class="form-control form-control-sm validate">
                                             <label data-error="wrong" data-success="right" for="modalLRInput10">Seu email</label>
                                         </div>
 
                                         <div class="md-form form-sm mb-4">
                                             <i class="fa fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput11" id="password" class="form-control form-control-sm validate">
+                                            <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" autocomplete="new-password">
                                             <label data-error="wrong" data-success="right" for="modalLRInput11">Sua senha</label>
                                         </div>
                                         <div class="text-center form-sm mt-2">
-                                            <button class="btn btn-info" type="submit" name="submit" >Log In <i class="fa fa-sign-in ml-1"></i></button>
+                                            <button class="btn btn-info" type="button" onclick="login()" >Log In <i class="fa fa-sign-in ml-1"></i></button>
                                         </div>
                                     </div>
                                 </form>
@@ -123,28 +130,45 @@
                                 <div class="tab-pane fade" id="panel8" role="tabpanel">
 
                                     <!--Body-->
-                                    <form id="login">
+                                    <form>
                                     <div class="modal-body">
+
+                                            <div id="erroruser" class="hide">
+                                                    E-mail ja registrado.
+                                            </div>
+
+                                            <div id="userregister" class="hide">
+                                                    Cadastrado com sucesso! So fazer o login e se divertir!
+                                            </div>
+
+                                            <div class="md-form form-sm mb-5">
+                                                    <i class="fa fa-user prefix"></i>
+                                                    <input type="text" id="rusername" class="form-control form-control-sm validate">
+                                                    <label data-error="wrong" data-success="right" for="rusername">Seu Username</label>
+                                                </div>
+
                                         <div class="md-form form-sm mb-5">
                                             <i class="fa fa-envelope prefix"></i>
-                                            <input type="email" id="modalLRInput12" id="email" class="form-control form-control-sm validate">
-                                            <label data-error="wrong" data-success="right" for="modalLRInput12">Seu email</label>
+                                            <input type="email" id="modalLRInput12" autocomplete="username" class="form-control form-control-sm validate">
+                                            <label data-error="wrong" data-success="right" for="modalLRInput12"  >Seu email</label>
                                         </div>
 
                                         <div class="md-form form-sm mb-5">
                                             <i class="fa fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput13" id="password" class="form-control form-control-sm validate">
+                                            <input type="password" id="modalLRInput13"  class="form-control form-control-sm validate" autocomplete="new-password">
                                             <label data-error="wrong" data-success="right" for="modalLRInput13">Sua senha</label>
                                         </div>
-
+                                        <div id="erroregister" class="hide">
+                                                A senhas não são iguais, favor verificar.
+                                        </div>
                                         <div class="md-form form-sm mb-4">
                                             <i class="fa fa-lock prefix"></i>
-                                            <input type="password" id="modalLRInput14" id="password" class="form-control form-control-sm validate">
+                                            <input type="password" id="modalLRInput14"  class="form-control form-control-sm validate" autocomplete="new-password">
                                             <label data-error="wrong" data-success="right" for="modalLRInput14">Repita sua senha</label>
                                         </div>
 
                                         <div class="text-center form-sm mt-2">
-                                            <button class="btn btn-info" type="submit" name="submit" >Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                                            <button class="btn btn-info" type="button" onclick="register()" name="submit" >Sign up <i class="fa fa-sign-in ml-1"></i></button>
                                         </div>
 
                                     </div>
@@ -179,7 +203,7 @@
                     <div class="container">
                         <h2><span>Crie e publique</span> suas aventuras</h2>
                         <p>Com nosso sistema de publicação na comunidade <br> Escreva e poste suas histórias na linha do tempo. Podem ser curtas ou longas, <br> o importante é a interação entre nossos aventureiros.</p>
-                        <a href="#" class="site-btn">Ver mais</a>
+                        
                     </div>
                 </div>
             </div>
@@ -188,7 +212,7 @@
                     <div class="container">
                         <h2>Persolize sua ficha <span> com nosso sistema</span> de criação</h2>
                         <p> Utilizando como base o sistema do Xibalba RPG <br> Monte, personalize, e salve sua ficha para jogar nosso sistema. <br> Só não trapasseie !</p>
-                        <a href="#" class="site-btn">Ver mais</a>
+                     
                     </div>
                 </div>
             </div>
@@ -207,19 +231,19 @@
                         <div class="fi-content text-white">
                             <h5><a href="#">Comunidade</a></h5>
                             <p>Conheça e faça parte de nossa ampla lista de posts de. </p>
-                            <a href="#" class="fi-comment">87 Comments</a>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 p-0">
                     <div class="feature-item set-bg" data-setbg="img/recent-game/fichapersonagem2.jpg">
-                        <a href="rpg/rpg.jpg" download="érepêgê">
+                       
                             <span class="cata strategy">preparação</span>
                         </a>
                         <div class="fi-content text-white">
                             <h5><a href="#">Sistema Xibalba</a></h5>
                             <p> Saiba tudo sobre nosso sistema básico de jogo. </p>
-                            <a href="#" class="fi-comment">10 Comments</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -229,7 +253,7 @@
                         <div class="fi-content text-white">
                             <h5><a href="#">Monte por conta própria</a></h5>
                             <p>Tenha acesso a uma ficha exclusiva do nosso sistema. </p>
-                            <a href="#" class="fi-comment">8 Comments</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -240,7 +264,7 @@
                             <h5><a href="#">Junte-se a taverna aventureiro </a>
                             </h5>
                             <p>Faça sua primeira entrada, e fique conosco. Tenha acesso completo e exclusivo da sua ficha. </p>
-                            <a href="#" class="fi-comment">3 Comments</a>
+                            
                         </div>
                     </div>
                 </div>

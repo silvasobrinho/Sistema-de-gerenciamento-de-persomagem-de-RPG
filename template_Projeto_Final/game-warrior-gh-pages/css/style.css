@@ -715,10 +715,12 @@ ol {
 
 .review-item .review-text h5 {
     margin-bottom: 20px;
+    color: white;
 }
 
 .review-item .review-text p {
     margin-bottom: 0;
+    color: white;
 }
 
 .review-item .rating {
@@ -1540,3 +1542,38 @@ ol {
         font-size: 40px;
     }
 }
+
+
+#erroregister {
+background-color: firebrick;
+text-align: center;
+border-radius: 15px;
+}
+
+.hide {
+     display:none;
+    }
+
+#erroruser {
+background-color: firebrick;
+text-align: center;
+border-radius: 15px;
+}
+
+#userregister { 
+background-color: rgb(51, 209, 19);
+text-align: center;
+border-radius: 15px;
+}
+
+#errorlogin {
+    background-color: firebrick;
+    text-align: center;
+    border-radius: 15px;
+    }
+
+    #sclogin { 
+        background-color: rgb(51, 209, 19);
+        text-align: center;
+        border-radius: 15px;
+        }

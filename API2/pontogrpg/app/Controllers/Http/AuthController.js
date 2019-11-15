@@ -18,6 +18,12 @@ class AuthController {
         const token = await auth.attempt(email,password)
             return token
         }
+
+
+async getuserdata ({request, auth}){
+        let user = await auth.getUser();
+    return user.id
 }
 
+}
 module.exports = AuthController
