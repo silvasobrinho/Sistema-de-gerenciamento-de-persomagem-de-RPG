@@ -177,23 +177,34 @@ function login(email, senha){
 					
 					console.log(localStorage.getItem("rpgtoken"))
 					
+
+
+					axios.post('http://localhost:3333/userdata',{
+						token : localStorage.getItem("rpgtoken"),
+						})
+					.then(function (response) {
 					
+					localStorage.setItem('rpgusername',response.data.username);
+					localStorage.setItem('rpgemail',response.data.email);
+					localStorage.setItem('rpgid',response.data.id);
+					localStorage.setItem('rpglog',"true");
+					console.log(localStorage.getItem("rpgusername"))
+					console.log(localStorage.getItem("rpgemail"))
+					console.log(localStorage.getItem("rpgid"))
+					window.location.href="logged.html";
+					}).catch(function (error) {
+						console.log("erro de pegar credenciais dentro do login e gravar")
+					})
+
 				})
 				.catch(function (error) {
-					console.log("tono errorrrrr")
+					
 					$('#errorlogin').removeClass("hide");
 					console.error(error)
 				});
-
-
-
-
-
-
-
-
-
 				}
+
+
 
 			function register(){
 				$('#erroregister').addClass("hide");
@@ -225,3 +236,28 @@ function login(email, senha){
 				});
 
 			}
+
+
+			//verifica se esta logado e remove o botao de logar e adiciona o de deslogar
+			console.log(localStorage.getItem("rpglog"));
+
+			if(localStorage.getItem("rpglog") === 'true'){
+				console.log("entrei")
+				$('#logar').addClass("hide");
+				$('#deslogar').removeClass("hide");
+				$('#ausuario').removeClass("hide");
+			}else{
+				$('#logar').removeClass("hide");
+				$('#deslogar').addClass("hide");
+				$('#ausuario').addClass("hide");
+			}
+
+
+		
+		function logout(){
+					localStorage.setItem('rpgusername',null);
+					localStorage.setItem('rpgemail', null);
+					localStorage.setItem('rpgid', null);
+					localStorage.setItem('rpglog', null);
+					window.location.href="index.html";
+		}

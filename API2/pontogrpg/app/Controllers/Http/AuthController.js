@@ -22,7 +22,8 @@ class AuthController {
 
 async getuserdata ({request, auth}){
         let user = await auth.getUser();
-    return user.id
+        user.password = null; //proteção pr anao enviar o password de volta
+    return user
 }
 
 }
