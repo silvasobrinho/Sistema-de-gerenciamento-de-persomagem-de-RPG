@@ -95,8 +95,8 @@ class PersonagemController {
    * @param {View} ctx.view
    */
   async show ({ params }) {
-
-    const personagem = await Personagem.findOrFail(params.id)
+    
+    const personagem = await Personagem.query().where('user_id', params.id).fetch();
 
   
     return personagem

@@ -1582,3 +1582,14 @@ border-radius: 15px;
 .usercont{
     background-color: rgb(174, 222, 245);
 }
+
+.btn-primary {
+    min-width:75px;
+    max-width:75px;
+}
+
+.input-group-text {
+    text-align: center;
+    min-width: 75px;
+    max-width: 75px;
+}

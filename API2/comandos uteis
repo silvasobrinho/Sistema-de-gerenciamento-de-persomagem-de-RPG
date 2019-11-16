@@ -5,3 +5,5 @@ adonis serve --dev  --- roda como se fosse o nodemon
 adonis migration:run  --- roda as migration
 
 adonis make:controller Session --type http ---criar um novo controller 
+
+adonis make:migration users  ---cria migrations
