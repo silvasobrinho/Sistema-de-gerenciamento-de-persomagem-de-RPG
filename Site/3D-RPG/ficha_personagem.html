@@ -89,15 +89,15 @@
                                         <div class="form-row">
                                             <div class="col-lg-6 col-md-6 col-sm-12">
                                                 <label for="inputEstado">Nome do Jogador</label>
-                                                <input type="text" class="form-control" placeholder="">
+                                                <input type="text" class="form-control text-center" id="nome_jogador" placeholder="">
                                             </div>
                                             <div class="col-lg-3 col-md-6 col-sm-12">
                                                 <label for="inputEstado">Raça</label>
-                                                <input type="text" class="form-control text-center" placeholder="">
+                                                <input type="text" class="form-control text-center" id="raca_perso" placeholder="">
                                             </div>
                                             <div class="col-lg-3 col-md-6 col-sm-12">
                                                 <label for="inputEstado">Classe</label>
-                                                <input type="text" class="form-control text-center" placeholder="">
+                                                <input type="text" class="form-control text-center" id="classe_per" placeholder="">
                                             </div>
                                         </div>
                                     
@@ -106,21 +106,21 @@
                                     <div class="form-row">
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="inputEstado">Nome do Personagem </label>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" class="form-control text-center" id="nome_personagem" placeholder="">
                                         </div>
 
                                         <div class="col-lg-3 col-md-6 col-sm-12">
                                             <label for="inputEstado">Idade</label>
-                                            <input type="text" class="form-control text-center" placeholder="">
+                                            <input type="text" class="form-control text-center" id="idade" placeholder="">
                                         </div>
 
                                         <div class="form-group col-lg-3 col-md-6 col-sm-12">
                                             <label class="text-center" for="inputEstado">Sexo</label>
-                                            <select id="inputEstado" class="form-control">
-                                                <option selected></option>
-                                                <option><strong>Masculino</strong></option>
-                                                <option><strong>Feminino</strong></option>
-                                                <option><strong>Indefinido</strong></option>
+                                            <select id="sexo_perso" class="form-control">
+                                                <option selected>Indefinido</option>
+                                                <option value="Masculino">Masculino</option>
+                                                <option value="Feminino">Feminino</option>
+                                                <option value="Indefinido">Indefinido</option>
                                             </select>
                                         </div>
 
@@ -131,11 +131,11 @@
                             <!--FIM DO CARD "FICHA DE PERSONAGEM"-->
 
                             <!--INICIO DO CARD "ATRIBUTOS"-->
-                            <div class="container-fluid">
+                          
                                 <div class="row">
-                                    <div class="card bg-light col-md-6 d-flex mt-2">
+                                    <div class="card col-lg-6 col-md-12 col-sm-12 mt-2 atributos">
                                         <div class="card-header bg-black text-white text-center">Atributos</div>
-                                        <table class="table table-bordered " style="max-width: 31em;">
+                                        <table class="table table-bordered " >
                                             <thead>
                                                 <tr>
                                                     <th scope="col"> </th>
@@ -171,7 +171,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="input-group mb-3">
-                                                            <span class="input-group-text" id="inputGroup-sizing" style="width: 132px; height: 40px;">
+                                                            <span class="input-group-text text-center" id="inputGroup-sizing" style="width: 132px; height: 40px;">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -343,13 +343,13 @@
                               
                                 <div class="vida col-md-6 ">
                                     <div class="row">
-                                        <div class="col-md-6 mt-2">
+                                        <div class="col-md-6 mt-2 blocktow">
                                     <div class="card vida">
                                         <div class="card-header bg-black text-white text-center">P.V</div>
                                         <div class="card-body">
                                             <p class="card-text">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control form-control-pv" aria-label="" aria-describedby="inputGroup-sizing-sm">
+                                                    <input type="text" class="form-control form-control-pv text-center" aria-label="" id="vida_perso" aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                             </p>
                                         </div>
@@ -357,14 +357,14 @@
                                         </div>
                                    
 
-                                <div  class="col-md-6 mt-2">
+                                <div  class="col-md-6 mt-2 blocktow">
                                    
                                     <div class="card mana">
                                         <div class="card-header bg-black text-white text-center">Mana</div>
                                         <div class="card-body">
                                             <p class="card-text">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control form-control-pv" aria-label="" aria-describedby="inputGroup-sizing-sm">
+                                                    <input type="text" class="form-control form-control-pv text-center" id="mana_perso" aria-label="" aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                             </p>
                                         </div>
@@ -374,7 +374,7 @@
 
 
                                     <div class="row">
-                                        <div class="col-md-12 mt-2">
+                                        <div class="col-md-12 mt-2 blocktow">
                              <!--INICIO DO CARD "BENIGNOS&MALIGNOS"-->
                              <div  class="beni">
                                 <div class="card">
@@ -390,10 +390,12 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                            <textarea class="form-control form-control-centralizado" id="exampleFormControlTextarea1" rows="10"></textarea>
+                                                            <textarea class="form-control form-control-centralizado" id="beni_perso" id="exampleFormControlTextarea1" rows="10">
+
+                                                            </textarea>
                                                         </td>
                                                         <td>
-                                                            <textarea class="form-control form-control-centralizado" id="exampleFormControlTextarea1" rows="10">
+                                                            <textarea class="form-control form-control-centralizado" id="mali_perso" id="exampleFormControlTextarea1" rows="10">
 
                                                             </textarea>
                                                         </td>
@@ -409,7 +411,7 @@
                                     </div>
                                 </div>
                                 </div>
-                            </div>
+                            
                      <!--FIM DO CARD "BENIGNOS&MALIGNOS"-->
                                     <!--INICIO DO CARD "ANOTAÇÕES"-->
                                     <div class="row mt-2">
@@ -419,7 +421,7 @@
                                             <div class="card-body">
                                                 <p class="card-text">
                                                     <div class="form-group textoanotações">
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                                                        <textarea class="form-control" id="anota_perso" id="exampleFormControlTextarea1" rows="8"></textarea>
                                                     </div>
 
                                                 </p>
@@ -433,11 +435,11 @@
                                     <!--INICIO DO CARD "PERICIAS"-->
                                     <div id="pericias" class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="card pericias">
-                                            <div class="card-header bg-black text-white text-center">Perícias e seus Pontos</div>
+                                            <div class="card-header bg-black text-white text-center">Perícias</div>
                                             <div class="card-body top">
                                                 <p class="card-text">
                                                         <div class="form-group textopericias">                              
-                                                    <textarea class="form-control form-control-justify" id="exampleFormControlTextarea1" rows="8"></textarea>
+                                                    <textarea class="form-control form-control-justify" id="pericias_perso" id="exampleFormControlTextarea1" rows="8"></textarea>
                                                         </div>                                                              
                                                     
                                                 </p>
@@ -449,8 +451,8 @@
 
 
                                         <!--INICIO DO CARD "ARMADURAS"-->
-                                        <div class="row mt-2">
-                                        <div id="armaduras" class="col-lg-6 col-md-6 col-sm-12 ">
+                                        <div class="row ">
+                                        <div id="armaduras" class="col-lg-6 col-md-6 col-sm-12 mt-2">
                                             <div class="card armaduras" >
 
                                                 <div class="card-body top">
@@ -464,25 +466,25 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                    <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="armadura1_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="protecao1_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                    <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="armadura2_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="protecao2_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                    <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="armadura3_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="protecao3_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                                 </tr>
                                                                 <tr>
-                                                                        <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                        <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                        <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="armadura4_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                        <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="protecao4_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                                     </tr>
 
                                                                     <tr>
-                                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="armadura5_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="protecao5_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                                         </tr>
                                                                
                                                             </tbody>
@@ -504,7 +506,7 @@
 
 
                                 <!--INICIO DO CARD "MAGIAS, CAMINHOS, FORMAS"-->
-                                <div id="magcamfor" class="col-lg-6 col-md-6 col-sm-12 ">
+                                <div id="magcamfor" class="col-lg-6 col-md-6 col-sm-12 mt-2">
                                     <div class="card magcamfor">
 
                                         <div class="card-body topmagias">
@@ -518,24 +520,24 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="mag1_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="custo1_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="mag2_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="custo2_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="mag3_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="custo3_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="mag4_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="custo4_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="mag5_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" aria-label="" id="custo5_perso" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -568,20 +570,20 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="arma1_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="dano1_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="arma2_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="dano2_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="arma3_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="dano3_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
-                                                            <td><input type="text" class="form-control form-control-centralizado" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="arma4_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" id="dano4_perso" aria-label="" aria-describedby="inputGroup-sizing-sm"></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -591,7 +593,8 @@
                                 </div>
                             </div>
                                 <!--FIM DO CARD "ARMAS"-->
-                                <a href="#"><button class="site-btn btn-sm button-ficha">Salvar</button></a> 
+                                
+                                <button class="site-btn btn-sm button-ficha mt-5 float-right" type="button" onclick="salvarpersonagem()">Salvar</button>
                             </div>
                             </div>
 

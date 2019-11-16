@@ -196,3 +196,67 @@ document.getElementById("inteligencia").addEventListener("input", function() {
 
     }
 });
+
+
+
+function salvarpersonagem(){
+    console.log("personagem salvo")
+    let selected = document.getElementById(sexo_perso);
+
+
+    dados={
+    'nome_personagem': document.getElementById("nome_personagem").value,
+    'nome_jogador' : document.getElementById("nome_jogador").value,
+    'raca' : document.getElementById("raca_perso").value,
+    'idade' : document.getElementById("idade").value,
+    'classe' : document.getElementById("classe_per").value,
+    'sexo_perso' : $("#sexo_perso").find("option:selected").text(),
+    'pv': document.getElementById("vida_perso").value,
+    'mana': document.getElementById("mana_perso").value,
+    'agi': $("#agilidade").find("option:selected").text(),
+    'car': $("#carisma").find("option:selected").text(),
+    'con': $("#constituicao").find("option:selected").text(),
+    'dex': $("#destreza").find("option:selected").text(),
+    'for': $("#forca").find("option:selected").text(),
+    'int': $("#inteligencia").find("option:selected").text(),
+    'anotacoes': document.getElementById("anota_perso").value,
+    'pericias': document.getElementById("pericias_perso").value,
+    'benignos': document.getElementById("beni_perso").value,
+    'malignos': document.getElementById("mali_perso").value,
+    'arma1': document.getElementById("arma1_perso").value,
+    'dano1': document.getElementById("dano1_perso").value,
+    'arma2': document.getElementById("arma2_perso").value,
+    'dano2': document.getElementById("dano2_perso").value,
+    'arma3': document.getElementById("arma3_perso").value,
+    'dano3': document.getElementById("dano3_perso").value,
+    'arma4': document.getElementById("arma4_perso").value,
+    'dano4': document.getElementById("dano4_perso").value,
+    'armadura1': document.getElementById("armadura1_perso").value,
+    'protecao1': document.getElementById("protecao1_perso").value,
+    'armadura2': document.getElementById("armadura2_perso").value,
+    'protecao2': document.getElementById("protecao2_perso").value,
+    'armadura3': document.getElementById("armadura3_perso").value,
+    'protecao3': document.getElementById("protecao3_perso").value,
+    'armadura4': document.getElementById("armadura4_perso").value,
+    'protecao4': document.getElementById("protecao4_perso").value,
+    'armadura5': document.getElementById("armadura5_perso").value,
+    'protecao5': document.getElementById("protecao5_perso").value,
+    'magia1': document.getElementById("mag1_perso").value,
+    'custo1': document.getElementById("custo1_perso").value,
+    'magia2': document.getElementById("mag2_perso").value,
+    'custo2': document.getElementById("custo2_perso").value,
+    'magia3': document.getElementById("mag3_perso").value,
+    'custo3': document.getElementById("custo3_perso").value,
+    'magia4': document.getElementById("mag4_perso").value,
+    'custo4': document.getElementById("custo4_perso").value,
+    'magia5': document.getElementById("mag5_perso").value,
+    'custo5': document.getElementById("custo5_perso").value,
+
+    }
+
+console.log(dados)
+
+}
+
+
+

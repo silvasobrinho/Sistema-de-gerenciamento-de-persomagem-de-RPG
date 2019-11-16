@@ -38,6 +38,8 @@ class PersonagemSchema extends Schema {
       table.string('dano2')
       table.string('arma3')
       table.string('dano3')
+      table.string('arma4')
+      table.string('dano4')
       table.string('armadura1')
       table.string('protecao1')
       table.string('armadura2')

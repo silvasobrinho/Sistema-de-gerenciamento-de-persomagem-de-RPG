@@ -2,20 +2,12 @@
     background-color: black;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    .atributos {
+        max-width: 500px;
+        left: 15px;
     }
-    
-    .div1 { grid-area: 1 / 1 / 2 / 5; }
-    .div2 { grid-area: 2 / 1 / 4 / 3; }
-    .div3 { grid-area: 2 / 3 / 3 / 4; }
-    .div4 { grid-area: 2 / 4 / 3 / 5; }
-    .div5 { grid-area: 3 / 3 / 4 / 5; }
-    .div6 { grid-area: 4 / 1 / 5 / 3; }
-    .div7 { grid-area: 4 / 3 / 5 / 5; }
-    .div8 { grid-area: 5 / 1 / 6 / 3; }
-    .div9 { grid-area: 5 / 3 / 6 / 5; }
+
+    .blocktow {
+        
+        left: 30px;
+    }
