@@ -1,84 +1,21 @@
-#atributos {
-    margin-top: 0.5rem;
-}
-
-#pv {
-    margin-top: 0.5rem;
-}
-
-#mana .mana {
-    margin-top: 0.5rem;
-    width: 15rem;
-    height: 10rem;
-}
-
-#anotações {
-    margin-left: -1rem;
-    margin-top: 1rem;
-}
-
-#pericias {
-    margin-left: -1rem;
-    margin-top: 1rem;
-}
-
-.BMArmas {
-    display: inline;
-}
-
-#arma {
-    display: inline;
-}
-
-#benimali {
-    display: inline;
-}
-
-.armas {
-    margin-left: 0.0rem;
-    margin-top: 0rem;
-}
-
-.armaduras {
-    margin-top: 1rem;
-    margin-left: -1rem;
-}
-
-.magcamfor {
-    margin-top: 0rem;
-}
-
-.form-control-pv {
-    width: 1px;
-    height: 3rem;
-    text-align: center;
-}
-
-.form-control-centralizado {
-    text-align: center;
-}
-
-.textoanotações {
-    width: 30rem;
-    height: 30rem;
-}
-
-.top {
-    padding-top: 0rem;
-}
-
-.topmagias {
-    margin-top: -2rem;
-}
-
 .bg-black {
     background-color: black;
 }
 
-.input-group-text {
-    text-align: center;
-}
-
-.button-ficha {
-    margin-left: 50rem;
-}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .div2 { grid-area: 2 / 1 / 4 / 3; }
+    .div3 { grid-area: 2 / 3 / 3 / 4; }
+    .div4 { grid-area: 2 / 4 / 3 / 5; }
+    .div5 { grid-area: 3 / 3 / 4 / 5; }
+    .div6 { grid-area: 4 / 1 / 5 / 3; }
+    .div7 { grid-area: 4 / 3 / 5 / 5; }
+    .div8 { grid-area: 5 / 1 / 6 / 3; }
+    .div9 { grid-area: 5 / 3 / 6 / 5; }
