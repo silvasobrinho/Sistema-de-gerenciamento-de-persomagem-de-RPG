@@ -27,7 +27,7 @@ function geradado(dado){
 
 function pegaasfichas(){
     
-
+console.log("adsasd")
         let url = "http://localhost:3333/personagens/"+localStorage.getItem("rpgid");
         let meutoken = {
             headers: {
@@ -50,29 +50,29 @@ function pegaasfichas(){
                 `)
                 contador ++;
             });
-         
-            if(contador === 0){
-                $("#listap").append(`
-                <tr>
-                <td>
-                <span class="float-right font-weight-bold">Ainda não Criou nenhum, personagem <a href="ficha_personagem.html">Click aqui e crie seu personagem!</span> 
-                </td>
-            </tr>
-                `)
-            }else{
+         console.log(contador)
+            
                 $("#listap").append(`
                 <tr>
                 <td>
                 <a href="ficha_personagem.html"><button class="site-btn btn-sm button-ficha mt-5 float-right" type="button">Ciar novo Personagem</button></a> 
                 </td>
             </tr>
-            `)}
+            `)
         })
         .catch(function (error) {
             
-           
+            $("#listap").append(`
+                <tr>
+                <td>
+                <span class="float-right font-weight-bold">Ainda não Criou nenhum, personagem <a href="ficha_personagem.html">Click aqui e crie seu personagem!</span> 
+                </td>
+            </tr>
+                `)
             console.error(error)
         });
+
+
     }
 
     function guardaid(id){
