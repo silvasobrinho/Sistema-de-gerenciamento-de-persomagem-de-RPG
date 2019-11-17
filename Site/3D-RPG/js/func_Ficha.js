@@ -1,7 +1,7 @@
 window.onload = function(){
     if(localStorage.getItem("rpglog") !== 'true'){
         window.location.href="index.html";
-        window.alert("Vce precisa estar logado para poder criar suas fichas!")
+        window.alert("Voce precisa estar logado para poder criar suas fichas!")
     }
 }
 

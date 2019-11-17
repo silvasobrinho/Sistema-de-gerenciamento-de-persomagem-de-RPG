@@ -239,10 +239,10 @@ function login(email, senha){
 
 
 			//verifica se esta logado e remove o botao de logar e adiciona o de deslogar
-			console.log(localStorage.getItem("rpglog"));
+	
 
 			if(localStorage.getItem("rpglog") === 'true'){
-				console.log("entrei")
+			
 				$('#logar').addClass("hide");
 				$('#deslogar').removeClass("hide");
 				$('#ausuario').removeClass("hide");

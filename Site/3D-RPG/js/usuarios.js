@@ -37,7 +37,7 @@ function pegaasfichas(){
     
         axios.get(url, meutoken)
         .then(function (response) {
-            console.log(response)
+            
             let contador = 0;
             response.data.forEach(element => {
                 $("#listap").append(`
@@ -50,7 +50,7 @@ function pegaasfichas(){
                 `)
                 contador ++;
             });
-            console.log(contador)
+         
             if(contador === 0){
                 $("#listap").append(`
                 <tr>
