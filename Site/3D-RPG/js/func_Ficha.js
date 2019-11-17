@@ -262,7 +262,7 @@ async function salvarpersonagem() {
 
     await pegarinfos()
 
-    console.log("personagem salvo")
+    
   
         let url = "http://localhost:3333/personagens/";
         let meutoken = {
@@ -273,11 +273,13 @@ async function salvarpersonagem() {
     
         axios.post(url, dados, meutoken)
         .then(function (response) {
-            console.log(response.status)
+            if(response.status === 200){
+                alert("Personagem salvo com sucesso!")
+                window.location.href="logged.html";
+            }})
             .catch(function (error) {
-            
+            alert("Favor preencha as informações de seu personagem")
            
                 console.error(error)
             });
-        })
-    }
+        }
