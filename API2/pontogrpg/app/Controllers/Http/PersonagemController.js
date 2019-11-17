@@ -213,7 +213,7 @@ class PersonagemController {
 
     }
     await personagem.delete()
-    return response.status(200)
+    return response.status()
   }
 }
 

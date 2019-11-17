@@ -131,10 +131,13 @@ async function updatepersonagem() {
                         window.location.href="logged.html";
                     })
                     .catch(function (error) {
-                    alert("Algo deu errado tente novamente!")
+                   
                    
                         console.error(error)
                     });
+                    alert("Personagem excluido com sucesso!")
+                        localStorage.removeItem("rpgidtoedit")
+                        window.location.href="logged.html";
                 } 
 
 
@@ -399,3 +402,4 @@ document.getElementById("inteligencia").addEventListener("input", function() {
 
     }
 });
+
