@@ -20,6 +20,13 @@ class PersonagemController {
    * @param {View} ctx.view
    */
 
+  async buscaum ({ params }) {
+
+    const personagem = await Personagem.findOrFail(params.id)
+
+    return personagem
+  }
+
 
 
 

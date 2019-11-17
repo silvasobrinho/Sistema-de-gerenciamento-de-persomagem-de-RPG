@@ -3,6 +3,12 @@
 
 const Personagem = use('App/models/Personagem')
 
+/** @typedef {import('@adonisjs/framework/src/Request',} Request */
+/** @typedef {import('@adonisjs/framework/src/Response',} Response */
+/** @typedef {import('@adonisjs/framework/src/View',} View */
+
+
+
 class DadoController {
 
     
@@ -42,14 +48,25 @@ class DadoController {
         
     }
 
-    async buscaum ({ params, auth, response }) {
 
-        const personagem = await Personagem.findOrFail(params.id)
-    
-        return personagem
-      }
+
+    async gd1000(req,res){
+        return  await Math.floor(Math.random() * (1000 - 1 + 1) +1 ) ; 
+        
+    }
+
+  /**
+   * Display a single personagem.
+   * GET personagems/:id
+   *
+   * @param {object} ctx
+   * @param {Request} ctx.request
+   * @param {Response} ctx.response
+   * @param {View} ctx.view
+   */
+
+
 }
-
 
 
 
