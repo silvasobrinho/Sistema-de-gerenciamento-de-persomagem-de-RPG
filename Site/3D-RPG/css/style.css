@@ -1593,3 +1593,7 @@ border-radius: 15px;
     min-width: 75px;
     max-width: 75px;
 }
+
+.btn-delete{
+    background-color: rgb(187, 41, 41);
+}

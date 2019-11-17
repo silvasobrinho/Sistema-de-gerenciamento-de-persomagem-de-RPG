@@ -19,12 +19,20 @@ class PersonagemController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
+
+
+
+
+   
   async index ({ request, response, view }) {
     const personagens = Personagem.all()
 
     return personagens
   }
 
+
+
+ 
   /**
    * Create/save a new personagem.
    * POST personagems

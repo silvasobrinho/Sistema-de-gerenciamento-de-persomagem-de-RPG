@@ -1,5 +1,8 @@
 'use strict'
 
+
+const Personagem = use('App/models/Personagem')
+
 class DadoController {
 
     
@@ -39,6 +42,15 @@ class DadoController {
         
     }
 
+    async buscaum ({ params, auth, response }) {
+
+        const personagem = await Personagem.findOrFail(params.id)
+    
+        return personagem
+      }
 }
+
+
+
 
 module.exports = DadoController

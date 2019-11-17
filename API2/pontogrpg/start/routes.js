@@ -20,9 +20,12 @@ Route.post('/register', 'AuthController.register')
 Route.post('/sessions', 'SessionController.create')
 Route.post('/userdata', 'AuthController.getuserdata')
 Route.post('/authenticate', 'AuthController.authenticate')
+Route.get('/personagens/um', 'DadoController.buscaum')
 Route.resource('personagens', 'PersonagemController')
   .apiOnly()
   .middleware('auth')
+
+
 Route.get('/dado/d4', 'DadoController.gd4')
 Route.get('/dado/d6', 'DadoController.gd6')
 Route.get('/dado/d8', 'DadoController.gd8')
