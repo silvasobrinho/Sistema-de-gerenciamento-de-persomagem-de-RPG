@@ -261,3 +261,5 @@ function login(email, senha){
 					localStorage.setItem('rpglog', null);
 					window.location.href="index.html";
 		}
+
+		$("#ano").append(new Date().getFullYear());

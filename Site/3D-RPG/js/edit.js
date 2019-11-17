@@ -1,5 +1,5 @@
 async function verificar (){
-    console.log("entrei")
+    
     if((localStorage.getItem("rpglog") !== 'true') || (typeof(localStorage.getItem("rpgidtoedit")) != typeof('n') )){
         window.location.href="index.html";
         
@@ -21,7 +21,7 @@ async function ficha(){
     
     axios.get(url, meutoken)
     .then(function (response) {
-       console.log(response.data)
+     
         $("#nome_personagem").val(response.data.nome_personagem)
         $("#nome_jogador").val(response.data.nome_jogador)
         $("#raca_perso").val(response.data.raca)

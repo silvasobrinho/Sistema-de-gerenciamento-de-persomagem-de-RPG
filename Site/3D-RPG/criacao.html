@@ -36,33 +36,34 @@
 
     <!-- Header section -->
     <header class="header-section">
-        <div class="container">
-            <!-- logo Ponto g -->
-            <a class="site-logo text-center" href="index.html" alt="PONTO G">
-                <img src="img/icones/iconmark.png" style="max-width:50px;" alt="">
-                <span class="logo" style="
-                                              text-decoration:underline overline; 
-                                              color: aliceblue;
-                                              font-size: 20px; 
-                                              font-family: 'Fira Code', Courier, monospace;"> 3Gs RPG</span>
-            </a>
-            <div class="user-panel">
-                <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Login</a> / <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Register</a>
-            </div>
-            <!-- responsive -->
-            <div class="nav-switch">
-                <i class="fa fa-bars"></i>
-            </div>
-            <!-- site menu -->
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="review.html">Criação</a></li>
-
-                    <li><a href="community.html">Forums</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <!-- logo Ponto g -->
+                <a class="site-logo text-center" href="index.html" alt="PONTO G">
+                    <img src="img/logo3g.png" style="max-width:300px;" alt="">
+                    
+                </a>
+                <div class="user-panel" id="logar">
+                    <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Login / Register</a>
+                </div>
+    
+                <div class="user-panel" onclick="logout()" id="deslogar">
+                        <a class="btn" >Logout</a>
+                    </div>
+                  
+                 <div class="user-panel" id="ausuario">
+                            <a href="logged.html" class="btn" >Area do Usuario</a>
+                        </div>
+                <!-- responsive -->
+                <div class="nav-switch">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <!-- site menu -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="criacao.html">Crie suas fichas</a></li>
+                    </ul>
+                </nav>
             <!--Modal: Login / Register Form-->
             <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog cascading-modal" role="document">
@@ -172,11 +173,11 @@
     <div class="latest-news-section">
         <div class="ln-title">Veja também aventureiro...</div>
         <div class="news-ticker">
-            <div class="news-ticker-contant">
-                <div class="nt-item"><span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-                <div class="nt-item"><span class="strategy">strategy</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
-                <div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
-            </div>
+                <div class="news-ticker-contant">
+                        <div class="nt-item"><span class="new">Em-breve</span>Gerador de personagens de varias classes para suas aventuras. </div>
+                        <div class="nt-item"><span class="strategy">Noticia</span>Tormenta Comemora 20 anos e lança novo RPG. </div>
+                        <div class="nt-item"><span class="racing">Novidades</span>Teste nosso sistema gerador de dados aleatorios para ajudar em suas campanhas.</div>
+                    </div>
         </div>
     </div>
     <!-- Latest news section end -->
@@ -190,7 +191,7 @@
                     <div class="col-xl-5 col-lg-6 text-white">
                         <h2>Hora da Criação</h2>
                         <p> Bem vindo aventureiro a sua primeira criação de Personagem, caso não seja, peço desculpas, meu auxliar é novo na taverna ,então vive cometento erros. Bom, nessa área você poderá estabelecer seu personagem, se você é daqules que
-                            gosta de refinar bem seu personagem, vá em frente e crie sua ficha do 0, se não, se é um aventureiro ocupado então utilize nossa escolha de personagem pré montado! </p>
+                            gosta de refinar bem seu personagem, vá em frente e crie sua ficha do 0. </p>
                     </div>
                 </div>
             </div>
@@ -231,24 +232,20 @@
 
     <!-- Footer section -->
     <footer class="footer-section">
-        <div class="container">
-            <ul class="footer-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="review.html">Criação</a></li>
-
-                <li><a href="community.html">Forums</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-            <p class="copyright">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script> Template Criado por  <a href="https://colorlib.com" target="_blank">Colorlib</a> a equipe RPG-3G agradeçe.
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-        </div>
-    </footer>
+            <div class="container">
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="criacao.html">Crie suas fichas</a></li>
+                </ul>
+                <p class="copyright">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<span id="ano"></span>
+                     Template Criado por  <a href="https://colorlib.com" target="_blank">Colorlib</a> a equipe RPG-3G agradeçe.
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </footer>
+   
     <!-- Footer section end -->
 
 

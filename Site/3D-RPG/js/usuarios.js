@@ -13,7 +13,7 @@ function geradado(dado){
 
     axios.get(url+dado)
     .then(function (response) {
-        console.log(response)
+        
         $(`#d${dado}`).empty();
         $(`#d${dado}`).append("⠀"+response.data+"⠀")
     })
@@ -27,7 +27,7 @@ function geradado(dado){
 
 function pegaasfichas(){
     
-console.log("adsasd")
+
         let url = "http://localhost:3333/personagens/"+localStorage.getItem("rpgid");
         let meutoken = {
             headers: {
@@ -38,7 +38,7 @@ console.log("adsasd")
         axios.get(url, meutoken)
         .then(function (response) {
             
-            let contador = 0;
+            
             response.data.forEach(element => {
                 $("#listap").append(`
                 <tr>
@@ -48,9 +48,9 @@ console.log("adsasd")
             </tr>
 
                 `)
-                contador ++;
+                
             });
-         console.log(contador)
+         
             
                 $("#listap").append(`
                 <tr>
@@ -77,5 +77,5 @@ console.log("adsasd")
 
     function guardaid(id){
         localStorage.setItem('rpgidtoedit',id);
-        console.log("ido da ficha"+localStorage.getItem("rpgidtoedit"))
+        
     }
