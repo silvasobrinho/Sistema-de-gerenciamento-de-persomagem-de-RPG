@@ -141,11 +141,12 @@ ol {
 
 .site-btn {
     display: inline-block;
+    margin-left: 15px;
     text-align: center;
     font-size: 15px;
     color: #131313;
     padding: 16px 30px;
-    min-width: 153px;
+    min-width: 140px;
     border-radius: 50px;
     font-weight: 500;
     border: none;
@@ -1544,48 +1545,47 @@ ol {
     }
 }
 
-
 #erroregister {
-background-color: firebrick;
-text-align: center;
-border-radius: 15px;
+    background-color: firebrick;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .hide {
-     display:none;
-    }
-
-#erroruser {
-background-color: firebrick;
-text-align: center;
-border-radius: 15px;
+    display: none;
 }
 
-#userregister { 
-background-color: rgb(51, 209, 19);
-text-align: center;
-border-radius: 15px;
+#erroruser {
+    background-color: firebrick;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#userregister {
+    background-color: rgb(51, 209, 19);
+    text-align: center;
+    border-radius: 15px;
 }
 
 #errorlogin {
     background-color: firebrick;
     text-align: center;
     border-radius: 15px;
-    }
+}
 
-    #sclogin { 
-        background-color: rgb(51, 209, 19);
-        text-align: center;
-        border-radius: 15px;
-        }
+#sclogin {
+    background-color: rgb(51, 209, 19);
+    text-align: center;
+    border-radius: 15px;
+}
 
-.usercont{
+.usercont {
     background-color: rgb(174, 222, 245);
 }
 
 .btn-primary {
-    min-width:75px;
-    max-width:75px;
+    min-width: 75px;
+    max-width: 75px;
 }
 
 .input-group-text {
@@ -1594,6 +1594,6 @@ border-radius: 15px;
     max-width: 75px;
 }
 
-.btn-delete{
+.btn-delete {
     background-color: rgb(187, 41, 41);
 }

@@ -1,8 +1,26 @@
-window.onload = function(){
-    if(localStorage.getItem("rpglog") !== 'true'){
-        window.location.href="index.html";
+window.onload = function() {
+    if (localStorage.getItem("rpglog") !== 'true') {
+        window.location.href = "index.html";
         window.alert("Voce precisa estar logado para poder criar suas fichas!")
     }
+}
+
+/*Função para baixar a ficha do personagem*/
+
+function funcao_pdf() {
+    var pegar_dados = document.getElementById('dados').innerHTML;
+
+    var janela = window.open('', '', 'width=800, heigth=600');
+    janela.document.write('<html> <head>');
+    janela.document.write('<title>PDF</title> <head>');
+    janela.document.write('<body>');
+    janela.document.write(pegar_dados);
+    janela.document.write('</body> </html>');
+    janela.document.close();
+    janela.print();
+
+
+
 }
 
 document.getElementById("agilidade").addEventListener("input", function() {
@@ -205,14 +223,15 @@ document.getElementById("inteligencia").addEventListener("input", function() {
 });
 
 var dados;
-function pegarinfos(){
-    return dados={
+
+function pegarinfos() {
+    return dados = {
         'nome_personagem': document.getElementById("nome_personagem").value,
-        'nome_jogador' : document.getElementById("nome_jogador").value,
-        'raca' : document.getElementById("raca_perso").value,
-        'idade' : document.getElementById("idade").value,
-        'classe' : document.getElementById("classe_per").value,
-        'sexo_perso' : $("#sexo_perso").find("option:selected").text(),
+        'nome_jogador': document.getElementById("nome_jogador").value,
+        'raca': document.getElementById("raca_perso").value,
+        'idade': document.getElementById("idade").value,
+        'classe': document.getElementById("classe_per").value,
+        'sexo_perso': $("#sexo_perso").find("option:selected").text(),
         'pv': document.getElementById("vida_perso").value,
         'mana': document.getElementById("mana_perso").value,
         'agi': $("#agilidade").find("option:selected").text(),
@@ -253,7 +272,7 @@ function pegarinfos(){
         'custo4': document.getElementById("custo4_perso").value,
         'magia5': document.getElementById("mag5_perso").value,
         'custo5': document.getElementById("custo5_perso").value
-        }
+    }
 }
 
 
@@ -262,24 +281,25 @@ async function salvarpersonagem() {
 
     await pegarinfos()
 
-    
-  
-        let url = "http://localhost:3333/personagens/";
-        let meutoken = {
-            headers: {
-                Authorization: "Bearer "+localStorage.getItem("rpgtoken")
-            }
+
+
+    let url = "http://localhost:3333/personagens/";
+    let meutoken = {
+        headers: {
+            Authorization: "Bearer " + localStorage.getItem("rpgtoken")
         }
-    
-        axios.post(url, dados, meutoken)
-        .then(function (response) {
-            if(response.status === 200){
+    }
+
+    axios.post(url, dados, meutoken)
+        .then(function(response) {
+            if (response.status === 200) {
                 alert("Personagem salvo com sucesso!")
-                window.location.href="logged.html";
-            }})
-            .catch(function (error) {
+                window.location.href = "logged.html";
+            }
+        })
+        .catch(function(error) {
             alert("Favor preencha as informações de seu personagem")
-           
-                console.error(error)
-            });
-        }
+
+            console.error(error)
+        });
+}

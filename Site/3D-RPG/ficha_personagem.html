@@ -36,34 +36,34 @@
 
     <!-- Header section -->
     <header class="header-section">
-            <div class="container">
-                <!-- logo Ponto g -->
-                <a class="site-logo text-center " href="index.html" alt="PONTO G">
-                    <img src="img/logo3g.png" style="max-width:300px;" alt="">
-                    
-                </a>
-                <div class="user-panel" id="logar">
-                    <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Login / Register</a>
-                </div>
-    
-                <div class="user-panel" onclick="logout()" id="deslogar">
-                        <a class="btn" >Logout</a>
-                    </div>
-                  
-                 <div class="user-panel" id="ausuario">
-                            <a href="logged.html" class="btn" >Area do Usuario</a>
-                        </div>
-                <!-- responsive -->
-                <div class="nav-switch">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <!-- site menu -->
-                <nav class="main-menu ">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="criacao.html">Crie suas fichas</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <!-- logo Ponto g -->
+            <a class="site-logo text-center " href="index.html" alt="PONTO G">
+                <img src="img/logo3g.png" style="max-width:300px;" alt="">
+
+            </a>
+            <div class="user-panel" id="logar">
+                <a href="" class="btn" data-toggle="modal" data-target="#modalLRForm">Login / Register</a>
+            </div>
+
+            <div class="user-panel" onclick="logout()" id="deslogar">
+                <a class="btn">Logout</a>
+            </div>
+
+            <div class="user-panel" id="ausuario">
+                <a href="logged.html" class="btn">Area do Usuario</a>
+            </div>
+            <!-- responsive -->
+            <div class="nav-switch">
+                <i class="fa fa-bars"></i>
+            </div>
+            <!-- site menu -->
+            <nav class="main-menu ">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="criacao.html">Crie suas fichas</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -81,28 +81,28 @@
                     <li>
 
                         <!--INICIO DO CARD "FICHA DE PERSONAGEM"-->
-                        <form>
+                        <form id="dados">
                             <div class="card col-lg-12 col-md-12 col-sm-12">
                                 <div class="card-header bg-black text-white text-center">FICHA DE PERSONAGEM</div>
 
                                 <div class="card-body">
 
-                                    
-                                        <div class="form-row">
-                                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                                <label for="inputEstado">Nome do Jogador</label>
-                                                <input type="text" class="form-control text-center" value="" id="nome_jogador" placeholder="" required>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                                <label for="inputEstado">Raça</label>
-                                                <input type="text" class="form-control text-center" value="" id="raca_perso" placeholder="">
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                                <label for="inputEstado">Classe</label>
-                                                <input type="text" class="form-control text-center" value="" id="classe_per" placeholder="">
-                                            </div>
+
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <label for="inputEstado">Nome do Jogador</label>
+                                            <input type="text" class="form-control text-center" value="" id="nome_jogador" placeholder="" required>
                                         </div>
-                                    
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <label for="inputEstado">Raça</label>
+                                            <input type="text" class="form-control text-center" value="" id="raca_perso" placeholder="">
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <label for="inputEstado">Classe</label>
+                                            <input type="text" class="form-control text-center" value="" id="classe_per" placeholder="">
+                                        </div>
+                                    </div>
+
 
 
                                     <div class="form-row">
@@ -132,24 +132,24 @@
                             <!--FIM DO CARD "FICHA DE PERSONAGEM"-->
 
                             <!--INICIO DO CARD "ATRIBUTOS"-->
-                          
-                                <div class="row">
-                                    <div class="card col-lg-6 col-md-12 col-sm-12 mt-2 atributos">
-                                        <div class="card-header bg-black text-white text-center">Atributos</div>
-                                        <table class="table table-bordered " >
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"> </th>
-                                                    <th class="text-center" style="width: 130px;" scope="col">Pontos</th>
-                                                    <th class="text-center" style="width: 130px;" scope="col">Modif</th>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th class="text-center" scope="row">AGI</th>
-                                                    <td><select id="agilidade" class="form-control">
-                                                        <option > </option>
+                            <div class="row">
+                                <div class="card col-lg-6 col-md-12 col-sm-12 mt-2 atributos">
+                                    <div class="card-header bg-black text-white text-center">Atributos</div>
+                                    <table class="table table-bordered ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"> </th>
+                                                <th class="text-center" style="width: 130px;" scope="col">Pontos</th>
+                                                <th class="text-center" style="width: 130px;" scope="col">Modif</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-center" scope="row">AGI</th>
+                                                <td><select id="agilidade" class="form-control">
+                                                        <option> </option>
                                                         <option><strong>3</strong></option>
                                                         <option><strong>4</strong></option>
                                                         <option><strong>5</strong></option>
@@ -169,10 +169,10 @@
                                                         <option><strong>19</strong></option>
                                                         <option><strong>20</strong></option>
                                                     </select>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group mb-3">
-                                                            <span class="input-group-text text-center" id="inputGroup-sizing" style="width: 132px; height: 40px;">
+                                                </td>
+                                                <td>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text text-center" id="inputGroup-sizing" style="width: 132px; height: 40px;">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -202,14 +202,16 @@
                                                 </td>
                                                 <td>
                                                     <div class="input-group">
-                                                        <span class="input-group-text text-center" id="inputGroup-sizing1" style="width: 132px; height: 40px;"></span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-center" scope="row">CON</th>
-                                                    <td>
-                                                        <select id="constituicao" class="form-control">
+                                                        <span class="input-group-text text-center"
+                                                            id="inputGroup-sizing1"
+                                                            style="width: 132px; height: 40px;"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center" scope="row">CON</th>
+                                                <td>
+                                                    <select id="constituicao" class="form-control">
                                                         <option></option>
                                                         <option><strong>3</strong></option>
                                                         <option><strong>4</strong></option>
@@ -230,17 +232,17 @@
                                                         <option><strong>19</strong></option>
                                                         <option><strong>20</strong></option>
                                                     </select>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group">
-                                                            <span class="input-group-text" id="inputGroup-sizing2" style="width: 132px; height: 40px;"></span>
-                                                        </div>
-                                                    </td>
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="inputGroup-sizing2" style="width: 132px; height: 40px;"></span>
+                                                    </div>
+                                                </td>
 
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-center" scope="row">DEX</th>
-                                                    <td><select id="destreza" class="form-control">
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center" scope="row">DEX</th>
+                                                <td><select id="destreza" class="form-control">
                                                         <option></option>
                                                         <option><strong>3</strong></option>
                                                         <option><strong>4</strong></option>
@@ -261,17 +263,17 @@
                                                         <option><strong>19</strong></option>
                                                         <option><strong>20</strong></option>
                                                     </select>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group">
-                                                            <span class="input-group-text" id="inputGroup-sizing3" style="width: 132px; height: 40px;"></span>
-                                                        </div>
-                                                    </td>
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="inputGroup-sizing3" style="width: 132px; height: 40px;"></span>
+                                                    </div>
+                                                </td>
 
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-center" scope="row">FOR</th>
-                                                    <td><select id="forca" class="form-control">
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center" scope="row">FOR</th>
+                                                <td><select id="forca" class="form-control">
                                                         <option></option>
                                                         <option><strong>3</strong></option>
                                                         <option><strong>4</strong></option>
@@ -292,18 +294,18 @@
                                                         <option><strong>19</strong></option>
                                                         <option><strong>20</strong></option>
                                                     </select>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group">
-                                                            <span class="input-group-text" id="inputGroup-sizing4" style="width: 132px; height: 40px;"></span>
-                                                        </div>
-                                                    </td>
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="inputGroup-sizing4" style="width: 132px; height: 40px;"></span>
+                                                    </div>
+                                                </td>
 
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-center" scope="row">INT</th>
-                                                    <td><select id="inteligencia" class="form-control">
-                                                        <option ></option>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center" scope="row">INT</th>
+                                                <td><select id="inteligencia" class="form-control">
+                                                        <option></option>
                                                         <option><strong>3</strong></option>
                                                         <option><strong>4</strong></option>
                                                         <option><strong>5</strong></option>
@@ -323,186 +325,188 @@
                                                         <option><strong>19</strong></option>
                                                         <option><strong>20</strong></option>
                                                     </select>
-                                                    </td>
-                                                    <td>
-                                                        <div class="input-group">
-                                                            <span class="input-group-text" id="inputGroup-sizing5" style="width: 132px; height: 40px;"></span>
-                                                        </div>
-                                                    </td>
+                                                </td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="inputGroup-sizing5" style="width: 132px; height: 40px;"></span>
+                                                    </div>
+                                                </td>
 
-                                                </tr>
+                                            </tr>
 
-                                            </tbody>
-                                        </table>
+                                        </tbody>
+                                    </table>
 
-                                    </div>
-                                   
-                                
+                                </div>
+
+
                                 <!--FIM DO CARD DE "ATRIBUTOS"-->
 
                                 <!--INICIO DO CARD "PONTOS DE VIDA"-->
-                              
+
                                 <div class="vida col-md-6 ">
                                     <div class="row">
                                         <div class="col-md-6 mt-2 blocktow">
-                                    <div class="card vida">
-                                        <div class="card-header bg-black text-white text-center">P.V</div>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control form-control-pv text-center" value="" aria-label="" id="vida_perso" aria-describedby="inputGroup-sizing-sm">
+                                            <div class="card vida">
+                                                <div class="card-header bg-black text-white text-center">P.V</div>
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-pv text-center" value="" aria-label="" id="vida_perso" aria-describedby="inputGroup-sizing-sm">
+                                                        </div>
+                                                    </p>
                                                 </div>
-                                            </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                        </div>
-                                   
 
-                                <div  class="col-md-6 mt-2 blocktow">
-                                   
-                                    <div class="card mana">
-                                        <div class="card-header bg-black text-white text-center">Mana</div>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control form-control-pv text-center" value="" id="mana_perso" aria-label="" aria-describedby="inputGroup-sizing-sm">
+
+                                        <div class="col-md-6 mt-2 blocktow">
+
+                                            <div class="card mana">
+                                                <div class="card-header bg-black text-white text-center">Mana</div>
+                                                <div class="card-body">
+                                                    <p class="card-text">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-pv text-center" value="" id="mana_perso" aria-label="" aria-describedby="inputGroup-sizing-sm">
+                                                        </div>
+                                                    </p>
                                                 </div>
-                                            </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
                                     </div>
 
 
                                     <div class="row">
                                         <div class="col-md-12 mt-2 blocktow">
-                             <!--INICIO DO CARD "BENIGNOS&MALIGNOS"-->
-                             <div  class="beni">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            <table class="table">
-                                                <thead class="bg-black text-white">
-                                                    <tr>
-                                                        <th class="text-center" scope="col">Benignos</th>
-                                                        <th class="text-center" scope="col">Malignos</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <textarea class="form-control form-control-centralizado" value="" id="beni_perso" id="exampleFormControlTextarea1" rows="10">
+                                            <!--INICIO DO CARD "BENIGNOS&MALIGNOS"-->
+                                            <div class="beni">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <p class="card-text">
+                                                            <table class="table">
+                                                                <thead class="bg-black text-white">
+                                                                    <tr>
+                                                                        <th class="text-center" scope="col">Benignos
+                                                                        </th>
+                                                                        <th class="text-center" scope="col">Malignos
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <textarea class="form-control form-control-centralizado" value="" id="beni_perso" id="exampleFormControlTextarea1" rows="10">
 
                                                             </textarea>
-                                                        </td>
-                                                        <td>
-                                                            <textarea class="form-control form-control-centralizado" value="" id="mali_perso" id="exampleFormControlTextarea1" rows="10">
+                                                                        </td>
+                                                                        <td>
+                                                                            <textarea class="form-control form-control-centralizado" value="" id="mali_perso" id="exampleFormControlTextarea1" rows="10">
 
                                                             </textarea>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                           
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                            
-                     <!--FIM DO CARD "BENIGNOS&MALIGNOS"-->
-                                    <!--INICIO DO CARD "ANOTAÇÕES"-->
-                                    <div class="row mt-2">
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="card anotações" >
-                                            <div class="card-header bg-black text-white text-center">Anotações</div>
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    <div class="form-group textoanotações">
-                                                        <textarea class="form-control" id="anota_perso" value="" id="exampleFormControlTextarea1" rows="8"></textarea>
-                                                    </div>
 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--FIM DO CARD "ANOTAÇÕES"-->
-
-
-
-                                    <!--INICIO DO CARD "PERICIAS"-->
-                                    <div id="pericias" class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="card pericias">
-                                            <div class="card-header bg-black text-white text-center">Perícias</div>
-                                            <div class="card-body top">
-                                                <p class="card-text">
-                                                        <div class="form-group textopericias">                              
-                                                    <textarea class="form-control form-control-justify" id="pericias_perso" value="" id="exampleFormControlTextarea1" rows="8"></textarea>
-                                                        </div>                                                              
-                                                    
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    
-
-
-                                        <!--INICIO DO CARD "ARMADURAS"-->
-                                        <div class="row ">
-                                        <div id="armaduras" class="col-lg-6 col-md-6 col-sm-12 mt-2">
-                                            <div class="card armaduras" >
-
-                                                <div class="card-body top">
-                                                    <p class="card-text">
-                                                        <table class="table">
-                                                            <thead class="bg-black text-white">
-                                                                <tr>
-                                                                    <th class="text-center" scope="col">Armaduras</th>
-                                                                    <th class="text-center" scope="col">Proteção</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura1_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao1_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura2_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao2_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura3_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                    <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao3_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura4_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                        <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao4_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura5_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao5_perso" aria-describedby="inputGroup-sizing-sm"></td>
-                                                                        </tr>
-                                                               
-                                                            </tbody>
-                                                        </table>
-                                                    </p>
+                            <!--FIM DO CARD "BENIGNOS&MALIGNOS"-->
+                            <!--INICIO DO CARD "ANOTAÇÕES"-->
+                            <div class="row mt-2">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card anotações">
+                                        <div class="card-header bg-black text-white text-center">Anotações</div>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <div class="form-group textoanotações">
+                                                    <textarea class="form-control" id="anota_perso" value="" id="exampleFormControlTextarea1" rows="8"></textarea>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <!--FIM DO CARD "ARMADURAS"-->
-                                   
-                                    <!--FIM DO CARD "PERICIAS"-->
 
-                               
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--FIM DO CARD "ANOTAÇÕES"-->
+
+
+
+                                <!--INICIO DO CARD "PERICIAS"-->
+                                <div id="pericias" class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card pericias">
+                                        <div class="card-header bg-black text-white text-center">Perícias</div>
+                                        <div class="card-body top">
+                                            <p class="card-text">
+                                                <div class="form-group textopericias">
+                                                    <textarea class="form-control form-control-justify" id="pericias_perso" value="" id="exampleFormControlTextarea1" rows="8"></textarea>
+                                                </div>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!--INICIO DO CARD "ARMADURAS"-->
+                            <div class="row ">
+                                <div id="armaduras" class="col-lg-6 col-md-6 col-sm-12 mt-2">
+                                    <div class="card armaduras">
+
+                                        <div class="card-body top">
+                                            <p class="card-text">
+                                                <table class="table">
+                                                    <thead class="bg-black text-white">
+                                                        <tr>
+                                                            <th class="text-center" scope="col">Armaduras</th>
+                                                            <th class="text-center" scope="col">Proteção</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura1_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao1_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura2_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao2_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura3_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao3_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura4_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao4_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="armadura5_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                            <td><input type="text" class="form-control form-control-centralizado text-center" value="" aria-label="" id="protecao5_perso" aria-describedby="inputGroup-sizing-sm"></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--FIM DO CARD "ARMADURAS"-->
+
+                                <!--FIM DO CARD "PERICIAS"-->
+
+
                                 <!--FIM DO CARD "PONTOS DE VIDA"-->
 
                                 <!--INICIO DO CARD "MANA"-->
-                                
+
                                 <!--FIM DO CARD "MANA"-->
 
 
@@ -546,18 +550,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                        </div>          
-                                   
-                                <!--FIM DO CARD "MAGIAS, CAMINHOS, FORMAS"-->
+                            </div>
+
+                            <!--FIM DO CARD "MAGIAS, CAMINHOS, FORMAS"-->
 
 
 
 
 
-                                <!--INICIO DO CARD "ARMAS"-->
-                                <div class="row mt-2">
+                            <!--INICIO DO CARD "ARMAS"-->
+                            <div class="row mt-2">
                                 <div id="armas" class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="card armas" >
+                                    <div class="card armas">
 
                                         <div class="card-body top">
                                             <p class="card-text">
@@ -593,18 +597,19 @@
                                     </div>
                                 </div>
                             </div>
-                                <!--FIM DO CARD "ARMAS"-->
-                                
-                                <button class="site-btn btn-sm button-ficha mt-5 float-right" type="button" onclick="salvarpersonagem()">Salvar</button>
-                            </div>
-                            </div>
+                            <!--FIM DO CARD "ARMAS"-->
 
-                            
-                        </form>
-                    </li>
-                </ul>
+                            <button class="site-btn btn-sm button-ficha mt-5 float-right" type="button" onclick="salvarpersonagem()">Salvar</button>
+                            <button class="site-btn btn-sm button-ficha mt-5 float-right" type="button" onclick="funcao_pdf()">Baixar</button>
+            </div>
+        </div>
 
-                
+
+        </form>
+        </li>
+        </ul>
+
+
         </div>
         </div>
 
@@ -617,19 +622,18 @@
 
     <!-- Footer section -->
     <footer class="footer-section">
-            <div class="container">
-                <ul class="footer-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="criacao.html">Crie suas fichas</a></li>
-                </ul>
-                <p class="copyright">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<span id="ano"></span>
-                     Template Criado por  <a href="https://colorlib.com" target="_blank">Colorlib</a> a equipe RPG-3G agradeçe.
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-            </div>
-        </footer>
+        <div class="container">
+            <ul class="footer-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="criacao.html">Crie suas fichas</a></li>
+            </ul>
+            <p class="copyright">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<span id="ano"></span> Template Criado por <a href="https://colorlib.com" target="_blank">Colorlib</a> a equipe RPG-3G agradeçe.
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+    </footer>
     <!-- Footer section end -->
 
 
