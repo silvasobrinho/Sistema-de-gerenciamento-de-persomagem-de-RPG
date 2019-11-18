@@ -1,8 +1,0 @@
-localhost:3001/register/auth  //rota de regstros
-localhost:3001/autheticate // rota para autenticação
-
-localhost:3001/gerador/d20
-localhost:3001/gerador/d10
-localhost:3001/gerador/d8
-localhost:3001/gerador/d6
-localhost:3001/gerador/d4
