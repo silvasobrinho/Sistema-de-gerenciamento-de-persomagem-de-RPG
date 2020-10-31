@@ -16,3 +16,7 @@ Sistema é RESTful com um servidor Back- end API para guardar e gerenciar os per
 
 ## Migrations
 1. Criar as tabelas `adonis migration:run`
+
+**Esses são os bravos guerreiros restantes da Residência de Software💚Gui, Jesus and Bruxo💜 e idealizadores do projeto**
+
+![Capa](https://user-images.githubusercontent.com/55250762/84310063-6be5e180-ab37-11ea-8946-c79bc408e0fd.png)
