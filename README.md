@@ -17,6 +17,11 @@ Sistema é RESTful com um servidor Back- end API para guardar e gerenciar os per
 ## Migrations
 1. Criar as tabelas `adonis migration:run`
 
-**Esses são os bravos guerreiros restantes da Residência de Software💚Gui, Jesus and Bruxo💜 e idealizadores do projeto**
+
+
+
+# Créditos para:
+
+**Os bravos guerreiros restantes da Residência de Software💚Gui, Jesus and Bruxo💜 que idealizadores do projeto !**
 
 ![Capa](https://raw.githubusercontent.com/GuilhermeAdias/Sistema-de-gerenciamento-de-persomagem-de-RPG/master/img/os-criadores.png)
